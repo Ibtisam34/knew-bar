@@ -1,5 +1,10 @@
-section {
-  margin: 0 5em !important;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0 5em !important;
 }
 
 .compact-dark {
@@ -13,7 +18,6 @@ section {
   z-index: 100;
   display: flex;
   flex-direction: row;
-  padding: 0 5em;
 }
 
 .compact-dark h1 {
@@ -54,6 +58,72 @@ section {
   flex-basis: 10%;
 }
 
+.headline-bar .top-section {
+  background: #1c1a19;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 10px 10px;
+  background-image: url("images/Illustration-header@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.headline-bar .top-section > div:first-child {
+  flex-basis: 95%;
+  padding-top: 19%;
+  order: 2;
+}
+
+.headline-bar .top-section .social-media {
+  flex-basis: 5%;
+  padding-top: 30%;
+  order: 1;
+}
+
+.headline-bar .headline-text {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100px;
+  margin-bottom: auto;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 20%;
+}
+
+.supporting-text {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.description-bar {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  width: 50%;
+}
+
 @media screen and (max-width: 900px) {
   body {
     background-color: gray;
@@ -87,33 +157,6 @@ section {
     font-size: 24px;
   }
 
-  /* .toolbar-contaainer {
-    position: absolute;
-    visibility: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #181e25;
-  }
-
-  .container-bar {
-    position: absolute;
-    visibility: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(24, 30, 37, 0.64) 0%,
-        rgba(24, 30, 37, 0.08) 84%,
-        rgba(24, 30, 37, 0.02) 92%,
-        rgba(24, 30, 37, 0) 100%
-      );
-  } */
-
   .headline-bar {
     padding: 1px 24px;
     gap: 12px;
@@ -124,7 +167,7 @@ section {
     background-position-y: 230px;
   }
 
-  .headline-text {
+  .headline-bar .headline-text {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
