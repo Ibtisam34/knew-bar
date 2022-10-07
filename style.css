@@ -16,11 +16,17 @@
     background: #3c3a39;
   }
   .compact-dark {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 0 20px; */
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap:81px;
+    padding-left: 31px;
+    padding-top: 191px;
+    background-image: url();
   }
 
   .logo-text {
