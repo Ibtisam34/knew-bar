@@ -62,7 +62,7 @@ body {
 
 .headline-bar .top-section {
   background: #1c1a19;
-  width: 100%;
+  width: auto;
   height: 100vh;
   display: flex;
   padding: 10px 10px;
@@ -236,6 +236,66 @@ body {
   line-height: 24px;
   color: #fff;
   border: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  padding: 0;
+  margin: 2em 0;
+  gap: 30px 30px;
+}
+
+.Works .work1 {
+  background-image: url("images/BG1.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.work1 p {
+  width: 295px;
+  height: 87px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 16px;
+  color: #fff;
+  flex: none;
+  flex-grow: 0;
+}
+
+.work1 .category {
+  display: flex;
+  gap: 10px;
+  margin-top: 0;
+  padding-right: 75px;
+  padding-left: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.work1 button {
+  width: 327px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
